@@ -1,0 +1,10 @@
+---
+all:
+  hosts:
+    localhost:
+  vars: 
+    ansible_connection: local
+  children:
+    jenkins:
+      hosts:
+        ip-172-31-5-179.ca-central-1.compute.internal:
